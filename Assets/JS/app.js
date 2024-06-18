@@ -45,6 +45,7 @@ function renderWinePosts(winePosts) {
         title.textContent = winePost.acf.title;
         label.src = winePost.acf.origin;
         image.src = winePost.acf.image.sizes.large;
+        image.alt = winePost.acf.image.alt;
         description.textContent = winePost.acf.description;
         price.textContent = "Pris pr. glas: " + winePost.acf.price + " kr.";
         buttonMV.innerHTML = `<a href="${winePost.acf.link_to_webshop}" target="_blank">Læs mere om vinen</a>`;
