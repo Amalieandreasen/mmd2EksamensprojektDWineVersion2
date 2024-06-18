@@ -66,6 +66,7 @@ function renderEventPosts(eventPosts){
         const buttonEventCta = document.createElement("div")
     
         imageEvents.src = eventPost.acf.image.sizes.medium
+        imageEvents.alt = eventPost.acf.image.alt
         titleEvents.textContent = eventPost.acf.title
         date.textContent = eventPost.acf.location
         snackDescription.textContent = eventPost.acf.snack_description
